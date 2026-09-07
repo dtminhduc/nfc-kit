@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NFC Kit — Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin:0 auto; padding:32px 20px 64px; max-width:720px;
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+         color:#111; background:#fff; }
+  @media (prefers-color-scheme: dark){ body{ color:#e8e8e8; background:#111; } a{color:#4ea3ff;} }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:19px; margin:34px 0 8px; }
+  .sub { color:#777; margin:0 0 28px; }
+  .box { border:1px solid #8883; border-radius:10px; padding:14px 18px; margin:20px 0; }
+  .lang { margin:28px 0; padding-top:24px; border-top:1px solid #8883; }
+  ul { padding-left:20px; }
+  dt { font-weight:600; margin-top:14px; }
+  dd { margin:2px 0 0 0; }
+</style>
+</head>
+<body>
+
+<h1>NFC Kit — Support</h1>
+<p class="sub">Read, write and lock NFC tags on iPhone.</p>
+
+<div class="box">
+  <strong>Contact:</strong> <a href="mailto:dtminhduc@gmail.com">dtminhduc@gmail.com</a><br>
+  Questions, bug reports and feature requests are all welcome. Replies usually within a few days.
+</div>
+
+<p><a href="privacy.html">Privacy Policy</a></p>
+
+<h2>Requirements</h2>
+<ul>
+  <li>iOS 18 or later — that means iPhone XR / XS or newer.</li>
+  <li>A physical NFC tag. NTAG213/215/216 and MIFARE Ultralight are fully supported.</li>
+</ul>
+
+<h2>Frequently asked</h2>
+<dl>
+  <dt>My iPhone won't scan a tag.</dt>
+  <dd>Hold the top edge of the phone against the tag and keep it still for a second. Older iPhones and iPads cannot scan tags from within an app at all.</dd>
+
+  <dt>Why can't the app read my building access card or hotel key?</dt>
+  <dd>Those are usually MIFARE Classic. iOS only exposes the UID for them and never the stored data. This is an iOS restriction, not something any app can work around.</dd>
+
+  <dt>Can I clone a tag, or copy its UID?</dt>
+  <dd>No. iOS does not allow changing a tag's UID or emulating a tag. The app can copy the <em>content</em> of one tag to another, but the new tag keeps its own UID.</dd>
+
+  <dt>The Wi-Fi tag doesn't connect my iPhone automatically.</dt>
+  <dd>Only Android does that. iOS reads the network name and password and shows them to you, but Apple does not let apps join a network from a tag.</dd>
+
+  <dt>I forgot the PIN protecting my tag passwords.</dt>
+  <dd>There is no recovery — the PIN is never stored, only a hash derived from it. You can reset it with Face ID / Touch ID, or by reinstalling the app.</dd>
+
+  <dt>I locked a tag by mistake.</dt>
+  <dd>Permanent lock is irreversible in hardware. That is why the app asks for a two-step confirmation before doing it.</dd>
+
+  <dt>I bought Lifetime Unlock and switched phones.</dt>
+  <dd>Open Settings inside the app and tap <em>Restore Purchases</em>. It restores on any device signed in to the same Apple Account.</dd>
+</dl>
+
+<div class="lang">
+<h1>NFC Kit — Hỗ trợ</h1>
+<p class="sub">Đọc, ghi và khoá thẻ NFC trên iPhone.</p>
+
+<div class="box">
+  <strong>Liên hệ:</strong> <a href="mailto:dtminhduc@gmail.com">dtminhduc@gmail.com</a><br>
+  Cứ gửi câu hỏi, báo lỗi hay góp ý tính năng. Thường trả lời trong vài ngày.
+</div>
+
+<p><a href="privacy.html">Chính sách riêng tư</a></p>
+
+<h2>Yêu cầu</h2>
+<ul>
+  <li>iOS 18 trở lên — tức iPhone XR/XS trở lên.</li>
+  <li>Thẻ NFC thật. Hỗ trợ đầy đủ NTAG213/215/216 và MIFARE Ultralight.</li>
+</ul>
+
+<h2>Câu hỏi thường gặp</h2>
+<dl>
+  <dt>iPhone không quét được thẻ.</dt>
+  <dd>Áp mép trên của máy vào thẻ và giữ yên khoảng một giây. iPhone và iPad đời cũ không quét được thẻ từ trong app.</dd>
+
+  <dt>Sao app không đọc được thẻ chung cư hay thẻ khách sạn?</dt>
+  <dd>Mấy loại đó thường là MIFARE Classic. iOS chỉ cho lấy UID, không cho đọc dữ liệu bên trong. Đây là giới hạn của iOS, không app nào vượt qua được.</dd>
+
+  <dt>Sao chép thẻ hoặc đổi UID được không?</dt>
+  <dd>Không. iOS không cho đổi UID hay giả lập thẻ. App chép được <em>nội dung</em> sang thẻ khác, còn UID thì thẻ mới vẫn giữ UID riêng.</dd>
+
+  <dt>Ghi thẻ Wi-Fi rồi mà iPhone không tự vào mạng.</dt>
+  <dd>Chỉ Android làm được. iOS đọc ra tên mạng và mật khẩu để bạn xem, nhưng Apple không cho app tự nối Wi-Fi từ thẻ.</dd>
+
+  <dt>Quên mã PIN bảo vệ mật khẩu thẻ.</dt>
+  <dd>Không khôi phục được — app không lưu mã PIN, chỉ lưu chuỗi băm. Có thể đặt lại bằng Face ID / Touch ID, hoặc cài lại app.</dd>
+
+  <dt>Lỡ khoá vĩnh viễn một thẻ.</dt>
+  <dd>Khoá vĩnh viễn là không thể đảo ngược ở mức phần cứng. Vì vậy app bắt xác nhận hai lớp trước khi làm.</dd>
+
+  <dt>Đã mua Mở khoá trọn đời nhưng đổi máy.</dt>
+  <dd>Vào phần Cài đặt trong app rồi bấm <em>Khôi phục giao dịch</em>. Khôi phục được trên mọi máy dùng chung Apple Account.</dd>
+</dl>
+</div>
+
+</body>
+</html>
